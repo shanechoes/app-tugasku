@@ -20,7 +20,7 @@ if (!$result) {
     die("Query gagal: " . mysqli_error($koneksi));
 }
 
-function aman(int $data) {
+function aman($data) {
     return htmlspecialchars((string)$data, ENT_QUOTES, "UTF-8");
 }
 ?>
